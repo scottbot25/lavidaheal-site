@@ -1,0 +1,5 @@
+# Local-only: dev server and design scratch page are not part of the published site
+serve.py
+_concepts.html
+__pycache__/
+_team-section.html

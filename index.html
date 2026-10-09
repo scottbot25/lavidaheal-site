@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lavida Heal — Bedside Wound Care for Colorado Skilled Nursing Facilities</title>
+<meta name="description" content="Lavida Heal delivers specialty bedside wound management to Colorado's skilled nursing facilities — patient-first, clinically thorough, and built around each resident in partnership with your nurses." />
+<meta name="theme-color" content="#15263D" />
+<meta name="author" content="Lavida Heal PLLC" />
+<link rel="canonical" href="https://lavidaheal.com/" />
+
+<!-- Favicon (self-contained SVG) + app icons -->
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="apple-touch-icon" href="assets/icon-180.png" />
+<link rel="manifest" href="site.webmanifest" />
+
+<!-- Security: everything is self-hosted, so the page may only load itself. No third-party scripts, pixels, fonts, embeds or network calls (HHS tracking-technology guidance). GitHub Pages cannot send headers, hence meta. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+
+<!-- Social share (Open Graph + Twitter). Absolute URLs point at the live domain, lavidaheal.com. -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Lavida Heal" />
+<meta property="og:title" content="Lavida Heal — Bedside Wound Care for Colorado SNFs" />
+<meta property="og:description" content="Specialty bedside wound management for Colorado's skilled nursing facilities — patient-first, delivered in partnership with your nurses." />
+<meta property="og:url" content="https://lavidaheal.com/" />
+<meta property="og:image" content="https://lavidaheal.com/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Lavida Heal — Bedside Wound Care for Colorado SNFs" />
+<meta name="twitter:description" content="Specialty bedside wound management for Colorado's skilled nursing facilities." />
+<meta name="twitter:image" content="https://lavidaheal.com/assets/og-image.png" />
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Lavida Heal PLLC",
+  "description": "Specialty bedside wound management for Colorado's skilled nursing facilities.",
+  "url": "https://lavidaheal.com/",
+  "telephone": "+1-720-407-6815",
+  "email": "operations@lavidaheal.com",
+  "medicalSpecialty": "Wound Care",
+  "areaServed": { "@type": "State", "name": "Colorado" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3895 Upham Street, Suite 80",
+    "addressLocality": "Wheat Ridge",
+    "addressRegion": "CO",
+    "postalCode": "80033",
+    "addressCountry": "US"
+  }
+}
+</script>
+
+<style>
+/* self-hosted fonts (no external dependency) */
+@font-face{font-family:'Hanken Grotesk';src:url('fonts/HankenGrotesk.ttf') format('truetype');
+  font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:'Fraunces';src:url('fonts/Fraunces-Italic.ttf') format('truetype');
+  font-weight:400 600;font-style:italic;font-display:swap}
+:root{
+  --navy:#1B3149; --ink:#243441; --muted:#5D6C77;
+  --terra:#DD8A5C; --terra-deep:#C56E3B; --terra-ink:#9E4A1B; --terra-soft:#F7DFC9; --terra-tint:#FAEDDD;
+  /* --terra-ink is the darkest terracotta that still reads as brand: 4.5:1 on cream/tint for small text (WCAG AA) */
+  --sage:#5C8C7D; --sage-deep:#3E655A; --sage-soft:#D8E7DC; --sage-tint:#E9F1E9;
+  --forest:#2F5247; --forest-2:#27453C;
+  --bg:#FAF6EE; --cream:#F3EBDD; --paper:#FFFFFF;
+  --line:rgba(27,49,73,.09); --line-2:rgba(27,49,73,.06);
+  --shadow-xs:0 1px 3px rgba(27,49,73,.05);
+  --shadow-sm:0 10px 30px -18px rgba(27,49,73,.22);
+  --shadow:0 26px 60px -30px rgba(27,49,73,.30);
+  --shadow-lg:0 50px 100px -50px rgba(27,49,73,.40);
+  --r:20px; --r-lg:30px;
+  --sans:'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --serif:'Fraunces', Georgia, serif;
+  --maxw:1180px; --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:var(--sans)}
+::selection{background:var(--terra);color:#fff}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--sage);outline-offset:3px;border-radius:8px}
+.skip-link{position:absolute;left:16px;top:-70px;z-index:300;background:var(--navy);color:#fff;padding:12px 20px;border-radius:0 0 12px 12px;font-weight:700;transition:top .25s var(--ease)}
+.skip-link:focus{top:0}
+.hp-field{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.serif-i{font-family:var(--serif);font-style:italic;font-weight:500;letter-spacing:0}
+.eyebrow{display:inline-flex;align-items:center;gap:11px;font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sage-deep)}
+.eyebrow::before{content:"";width:24px;height:2px;border-radius:2px;background:var(--terra)}
+.eyebrow.center{justify-content:center}
+h1,h2,h3{line-height:1.1;letter-spacing:-.02em;font-weight:700;color:var(--navy)}
+.section{padding:clamp(74px,10vw,132px) 0;position:relative}
+.section-head{max-width:730px;margin-bottom:56px}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.section-head h2{font-size:clamp(31px,4.5vw,52px);margin:20px 0 0}
+.section-head p{font-size:clamp(16px,1.7vw,19px);color:var(--muted);margin-top:18px;max-width:62ch}
+.section-head.center p{margin-left:auto;margin-right:auto}
+.btn{display:inline-flex;align-items:center;gap:10px;cursor:pointer;border:none;font-weight:700;font-size:15.5px;padding:15px 27px;border-radius:100px;transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s,color .3s;will-change:transform}
+.btn svg{width:17px;height:17px;transition:transform .3s var(--ease)}
+/* navy on terracotta = 4.97:1; white on it was 2.67:1 and failed WCAG AA */
+.btn-primary{background:var(--terra);color:var(--navy);box-shadow:0 14px 32px -14px rgba(197,110,59,.85)}
+.btn-primary:hover{background:#E6996E;box-shadow:0 22px 42px -14px rgba(197,110,59,.95)}
+.btn-primary:hover svg{transform:translateX(4px)}
+.btn-ghost{background:var(--paper);color:var(--navy);box-shadow:inset 0 0 0 1.5px var(--line),var(--shadow-xs)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1.5px var(--sage),var(--shadow-sm);transform:translateY(-3px);color:var(--sage-deep)}
+
+/* scroll progress */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:200;background:linear-gradient(90deg,var(--sage),var(--terra));border-radius:0 3px 3px 0;transition:width .1s linear}
+
+/* logo */
+.logo{display:inline-flex;align-items:center;gap:12px}
+/* the real Lavida mark (assets/logo-mark.png, cut from the practice logo) — no drawn substitute */
+.logo .mark{width:46px;height:44px;flex:none;object-fit:contain;display:block}
+.logo .lockup{width:150px;height:auto;display:block}
+.logo .words{display:flex;flex-direction:column;line-height:1}
+.logo .words b{font-size:21px;font-weight:800;color:var(--navy)}
+.logo .words b span{font-weight:300}
+.logo .words small{font-size:9.5px;font-weight:700;letter-spacing:.3em;color:var(--terra-ink);margin-top:3px}
+.on-dark .words small{color:var(--terra)}
+.logo.on-dark .words b{color:#fff}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px clamp(20px,4vw,44px);transition:padding .4s var(--ease),background .4s,box-shadow .4s}
+.nav.scrolled{background:rgba(251,250,245,.82);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);padding:12px clamp(20px,4vw,44px);box-shadow:0 1px 0 var(--line),0 14px 34px -26px rgba(27,49,73,.5)}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-size:15px;font-weight:600;color:var(--navy);opacity:.78;transition:opacity .25s;position:relative}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--terra);transition:width .3s var(--ease)}
+.nav-links a:hover{opacity:1}.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-links a.active{opacity:1}
+.nav .cta-wrap{display:flex;align-items:center;gap:16px}
+.nav .btn{padding:12px 22px;font-size:14.5px}
+.menu-btn{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:8px}
+.menu-btn span{width:24px;height:2px;background:var(--navy);border-radius:2px;transition:.3s}
+
+/* hero */
+.hero{position:relative;padding:150px 0 90px;overflow:hidden;background:radial-gradient(85% 75% at 88% 0%,#D9E9DC,transparent 62%),radial-gradient(75% 65% at 0% 100%,#F6E3CB,transparent 58%),var(--bg)}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(50px);z-index:0;will-change:transform}
+.hero-orb.o1{width:460px;height:460px;background:rgba(92,140,125,.30);top:-90px;right:3%}
+.hero-orb.o2{width:380px;height:380px;background:rgba(221,138,92,.26);bottom:-70px;left:1%}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
+.hero-pill{display:inline-flex;align-items:center;gap:9px;padding:8px 15px;border-radius:100px;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow-xs);font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--sage-deep)}
+.hero-pill .dot{width:8px;height:8px;border-radius:50%;background:var(--terra);box-shadow:0 0 0 4px rgba(221,138,92,.18);animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(221,138,92,.18)}50%{box-shadow:0 0 0 9px rgba(221,138,92,.03)}}
+.hero h1{font-size:clamp(42px,5.9vw,74px);margin:24px 0 0;letter-spacing:-.03em;line-height:1.05}
+.hero h1 .serif-i{color:var(--terra-deep)}
+.hero .lede{font-size:clamp(17px,1.9vw,20px);color:var(--muted);margin:26px 0 0;max-width:50ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.hero-trust{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:38px;padding-top:26px;border-top:1px solid var(--line)}
+.hero-trust span{display:inline-flex;align-items:center;gap:9px;font-size:14.5px;font-weight:600}
+.hero-trust span .ck{width:20px;height:20px;border-radius:50%;background:var(--sage-soft);color:var(--sage-deep);display:grid;place-items:center;flex:none}
+.hero-trust span .ck svg{width:12px;height:12px}
+.hero-visual{position:relative;height:520px}
+.hv-photo{position:absolute;inset:0 0 40px 30px;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);border:6px solid #fff;background:linear-gradient(150deg,var(--sage-soft),var(--sage-tint) 55%,var(--terra-soft));will-change:transform}
+.hv-photo .ph-inner{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:20px}
+.hv-photo .ph-inner .ic{width:66px;height:66px;border-radius:50%;background:rgba(92,140,125,.16);display:grid;place-items:center;margin:0 auto 14px;color:var(--sage-deep)}
+.hv-photo .ph-inner .ic svg{width:30px;height:30px}
+.hv-photo .ph-inner small{font-size:12px;color:var(--sage-deep);font-weight:700;opacity:.8}
+.cover-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;border-radius:inherit}
+.hv-chip{position:absolute;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:var(--shadow);display:flex;align-items:center;gap:13px;z-index:3}
+.hv-chip .ci{width:38px;height:38px;border-radius:11px;flex:none;display:grid;place-items:center}
+.hv-chip .ci svg{width:20px;height:20px}
+.hv-chip b{font-size:15px;font-weight:800;color:var(--navy);display:block;line-height:1.15}
+.hv-chip small{font-size:12px;color:var(--muted);font-weight:600}
+.hv-chip.c1{top:26px;right:-6px;animation:bob 5s ease-in-out infinite}
+.hv-chip.c2{bottom:8px;left:-18px;animation:bob 6s ease-in-out infinite .6s}
+.hv-badge{position:absolute;bottom:78px;right:14px;z-index:3;background:var(--navy);color:#fff;border-radius:18px;padding:16px 20px;box-shadow:var(--shadow);max-width:190px}
+.hv-badge b{font-family:var(--serif);font-style:italic;font-weight:500;font-size:19px;color:#fff;line-height:1.35;display:block}
+.hv-badge small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--terra-soft);font-weight:700;margin-top:6px;display:block}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+
+/* trust strip — sage band */
+.trust-strip{background:linear-gradient(120deg,var(--sage-deep),var(--sage))}
+.trust-strip .wrap{display:flex;align-items:center;justify-content:space-between;gap:26px;padding-top:26px;padding-bottom:26px;flex-wrap:wrap}
+.trust-strip .lab{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.75);flex:none}
+.trust-strip .pills{display:flex;flex-wrap:wrap;gap:12px}
+.trust-strip .pill{display:inline-flex;align-items:center;gap:9px;font-size:14.5px;font-weight:600;color:#fff;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.18);border-radius:100px;padding:9px 16px}
+.trust-strip .pill svg{width:16px;height:16px;color:#F2C9A6}
+.trust-strip .pill:nth-child(even) svg{color:#CDE4D6}
+
+/* stat band — open, no boxes */
+.statband{padding:clamp(50px,6vw,80px) 0}
+.statband .row{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.statband .cell{padding:6px 34px;border-left:1px solid var(--line)}
+.statband .cell:first-child{border-left:none;padding-left:0}
+.statband b{font-size:clamp(30px,3.6vw,42px);font-weight:800;color:var(--navy);letter-spacing:-.03em;line-height:1;display:block}
+.statband .cell:nth-child(odd) b{color:var(--terra-deep)}
+.statband .cell:nth-child(even) b{color:var(--sage-deep)}
+.statband .lab{margin-top:9px;font-weight:700;color:var(--navy);font-size:15.5px}
+.statband .sub{margin-top:3px;font-size:13.5px;color:var(--muted)}
+
+/* about */
+.about{background:var(--paper)}
+.about .grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:66px;align-items:center}
+.about h2{font-size:clamp(30px,4.4vw,50px)}
+.about h2 .serif-i{color:var(--sage-deep)}
+.about p.body{font-size:17.5px;color:var(--muted);margin-top:22px}
+.check-list{list-style:none;margin-top:30px;display:flex;flex-direction:column;gap:15px}
+.check-list li{display:flex;gap:15px;align-items:flex-start;font-weight:600;font-size:16.5px}
+.check-list li .ck{width:30px;height:30px;border-radius:50%;flex:none;display:grid;place-items:center;background:var(--sage-soft);color:var(--sage-deep);margin-top:2px}
+.check-list li:nth-child(2) .ck{background:var(--terra-soft);color:var(--terra-deep)}
+.check-list li svg{width:16px;height:16px}
+.about-visual{position:relative}
+.about-photo{border-radius:var(--r-lg);overflow:hidden;aspect-ratio:5/4.6;border:6px solid #fff;box-shadow:var(--shadow);background:linear-gradient(155deg,var(--sage-tint),var(--terra-tint));position:relative;display:grid;place-items:center}
+.about-photo .ph{text-align:center;color:var(--sage-deep)}
+.about-photo .ph .ic{width:60px;height:60px;border-radius:50%;background:rgba(92,140,125,.15);display:grid;place-items:center;margin:0 auto 12px}
+.about-photo .ph .ic svg{width:28px;height:28px}
+.about-photo .ph small{font-size:12px;font-weight:700;opacity:.8}
+
+/* ====================== JOURNEY STEPPER — forest anchor ====================== */
+.approach{background:linear-gradient(170deg,var(--forest) 0%,var(--forest-2) 100%);overflow:hidden;position:relative}
+.approach::before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(221,138,92,.18),transparent 70%);top:-220px;right:-140px}
+.approach::after{content:"";position:absolute;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.06),transparent 70%);bottom:-200px;left:-120px}
+.approach .wrap{position:relative;z-index:2}
+.approach .eyebrow{color:#BFD9CB}
+.approach .section-head h2{color:#fff}
+.approach .section-head h2 .serif-i{color:#EFB98F}
+.approach .section-head p{color:rgba(255,255,255,.72)}
+.approach .j-item .t{color:rgba(255,255,255,.72)}
+.approach .j-item .n{background:rgba(255,255,255,.12);color:#fff}
+.approach .j-item:hover{background:rgba(255,255,255,.07)}
+.approach .j-item.active{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.14);box-shadow:none}
+.approach .j-item.active .t{color:#fff}
+.approach .j-item.active .n{background:var(--terra)}
+.approach .j-item.done .n{background:rgba(255,255,255,.28);color:#fff}
+.approach .j-item .bar{background:rgba(255,255,255,.18)}
+.journey{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:stretch}
+.j-list{display:flex;flex-direction:column;gap:4px;position:relative}
+.j-item{display:flex;align-items:center;gap:16px;padding:15px 18px;border-radius:16px;cursor:pointer;border:1px solid transparent;transition:background .3s,border-color .3s;text-align:left;background:none;width:100%}
+.j-item .n{width:38px;height:38px;border-radius:50%;flex:none;display:grid;place-items:center;font-size:15px;font-weight:800;color:var(--sage-deep);background:var(--sage-soft);transition:.35s var(--ease)}
+.j-item .t{font-size:16.5px;font-weight:700;color:var(--muted);transition:color .3s}
+.j-item .bar{margin-left:auto;width:44px;height:4px;border-radius:4px;background:var(--line);overflow:hidden;flex:none;opacity:0;transition:opacity .3s}
+.j-item .bar i{display:block;height:100%;width:0;background:var(--terra);border-radius:4px}
+.j-item:hover{background:rgba(255,255,255,.6)}
+.j-item.active{background:var(--paper);border-color:var(--line-2);box-shadow:var(--shadow-sm)}
+.j-item.active .n{background:var(--terra);color:#fff;transform:scale(1.08)}
+.j-item.active .t{color:var(--navy)}
+.j-item.active .bar{opacity:1}
+.j-item.done .n{background:var(--sage);color:#fff}
+.j-stage{position:relative;background:var(--paper);border-radius:var(--r-lg);border:1px solid var(--line-2);box-shadow:var(--shadow-sm);padding:clamp(30px,4vw,52px);display:flex;flex-direction:column;justify-content:center;min-height:380px;overflow:hidden}
+.j-stage .big-n{position:absolute;top:6px;right:26px;font-family:var(--serif);font-style:italic;font-size:clamp(110px,14vw,170px);font-weight:500;color:var(--sage-tint);line-height:1;user-select:none;transition:.5s var(--ease)}
+.j-stage .tag{display:inline-flex;font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--terra-deep);background:var(--terra-tint);border-radius:100px;padding:6px 13px;width:max-content}
+.j-stage h3{font-size:clamp(24px,3vw,34px);margin-top:16px;position:relative;z-index:2}
+.j-stage p{font-size:clamp(15.5px,1.7vw,17.5px);color:var(--muted);margin-top:14px;max-width:52ch;position:relative;z-index:2}
+.j-stage .j-body{transition:opacity .35s var(--ease),transform .35s var(--ease)}
+.j-stage.swap .j-body{opacity:0;transform:translateY(14px)}
+.j-stage .foot{margin-top:26px;display:flex;align-items:center;gap:12px;position:relative;z-index:2}
+.j-stage .foot .ctrl{width:42px;height:42px;border-radius:50%;border:1.5px solid var(--line);background:#fff;display:grid;place-items:center;cursor:pointer;color:var(--navy);transition:.3s}
+.j-stage .foot .ctrl:hover{border-color:var(--sage);color:var(--sage-deep);transform:translateY(-2px)}
+.j-stage .foot .ctrl svg{width:17px;height:17px}
+.j-stage .foot .hint{font-size:13px;color:var(--muted);font-weight:600}
+
+/* ====================== SERVICES EXPLORER ====================== */
+.services{background:var(--bg)}
+.explorer{display:grid;grid-template-columns:1fr 1.05fr;gap:44px;align-items:start}
+.x-group{margin-bottom:22px}
+.x-group h4{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding:0 16px 9px}
+.x-row{display:flex;align-items:center;gap:14px;width:100%;text-align:left;padding:13px 16px;border-radius:14px;cursor:pointer;background:none;border:1px solid transparent;transition:background .25s,border-color .25s}
+.x-row .xi{width:36px;height:36px;border-radius:11px;flex:none;display:grid;place-items:center;background:var(--sage-tint);color:var(--sage-deep);transition:.3s}
+.x-row .xi svg{width:18px;height:18px}
+.x-row .xt{font-size:15.5px;font-weight:700;color:var(--ink)}
+.x-row .go{margin-left:auto;opacity:0;transform:translateX(-6px);transition:.3s;color:var(--terra-deep)}
+.x-row .go svg{width:16px;height:16px}
+.x-row:hover{background:var(--paper)}
+.x-row.active{background:var(--paper);border-color:var(--line-2);box-shadow:var(--shadow-sm)}
+.x-row.active .xi{background:var(--terra);color:#fff}
+.x-row.active .go{opacity:1;transform:none}
+.x-detail{position:sticky;top:110px;background:var(--paper);border-radius:var(--r-lg);border:1px solid var(--line-2);box-shadow:var(--shadow-sm);padding:clamp(30px,3.6vw,46px);min-height:430px;display:flex;flex-direction:column;overflow:hidden}
+.x-detail .d-ic{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;background:var(--sage-tint);color:var(--sage-deep);margin-bottom:22px}
+.x-detail .d-ic svg{width:30px;height:30px}
+.x-detail h3{font-size:clamp(22px,2.6vw,30px)}
+.x-detail p{font-size:16.5px;color:var(--muted);margin-top:14px;max-width:52ch}
+.x-detail .d-tag{margin-top:auto;padding-top:24px;border-top:1px dashed var(--line);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sage-deep)}
+.x-detail .d-body{transition:opacity .3s var(--ease),transform .3s var(--ease)}
+.x-detail.swap .d-body{opacity:0;transform:translateY(12px)}
+.x-inline{display:none;font-size:14.5px;color:var(--muted);padding:2px 16px 13px 66px;line-height:1.6}
+.x-row.open + .x-inline{display:block}
+
+/* escalation quote — terracotta wash */
+.escalate{background:linear-gradient(150deg,#F6DFC6,var(--terra-tint) 55%,#F9E7D2);position:relative;overflow:hidden}
+.escalate::before{content:"";position:absolute;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(221,138,92,.28),transparent 70%);top:-180px;left:-120px}
+.escalate .q{max-width:860px;margin:0 auto;text-align:center;position:relative;z-index:2}
+.escalate .eyebrow{color:var(--terra-deep)}
+.escalate .eyebrow::before{background:var(--sage-deep)}
+.escalate .q p.big{font-size:clamp(24px,3.4vw,40px);font-weight:700;line-height:1.25;color:var(--navy);margin-top:22px}
+.escalate .q p.big .serif-i{color:var(--terra-deep)}
+.escalate .q .sub{margin-top:18px;color:#7A6A56;font-size:16px;max-width:64ch;margin-left:auto;margin-right:auto}
+
+/* ====================== OUTCOMES / WHY ====================== */
+.why{background:var(--paper)}
+.acc{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.acc-item{background:var(--bg);border:1px solid var(--line-2);border-radius:18px;overflow:hidden;transition:box-shadow .3s}
+.acc-item.open{box-shadow:var(--shadow-sm);background:#fff}
+.acc-btn{display:flex;align-items:center;gap:15px;width:100%;text-align:left;padding:19px 22px;background:none;border:none;cursor:pointer}
+.acc-btn .ai{width:36px;height:36px;border-radius:11px;flex:none;display:grid;place-items:center;background:var(--sage-soft);color:var(--sage-deep)}
+.acc-item:nth-child(even) .acc-btn .ai{background:var(--terra-soft);color:var(--terra-deep)}
+.acc-btn .ai svg{width:18px;height:18px}
+.acc-btn h3{font-size:17.5px;flex:1}
+.acc-btn .chev{color:var(--muted);transition:transform .35s var(--ease)}
+.acc-btn .chev svg{width:18px;height:18px}
+.acc-item.open .chev{transform:rotate(180deg)}
+.acc-panel{max-height:0;overflow:hidden;transition:max-height .45s var(--ease)}
+.acc-panel p{padding:0 22px 20px 73px;font-size:15px;color:var(--muted)}
+
+/* team — sage field */
+.team{background:linear-gradient(180deg,var(--sage-tint),#DFEBE0)}
+/* flex, not grid: a short last row centres instead of hanging left */
+.team-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;perspective:1200px}
+.team-grid .tcard{flex:0 1 calc((100% - 80px)/5)}
+.tcard{background:var(--paper);border-radius:var(--r);border:1px solid var(--line-2);box-shadow:var(--shadow-xs);overflow:hidden;transition:box-shadow .4s var(--ease);transform-style:preserve-3d;will-change:transform}
+.tcard:hover{box-shadow:var(--shadow)}
+.tcard .head{position:relative;aspect-ratio:1/1.02;background:linear-gradient(160deg,var(--sage-tint),var(--sage-soft));display:grid;place-items:center;overflow:hidden}
+.tcard:nth-child(even) .head{background:linear-gradient(160deg,var(--terra-tint),var(--terra-soft))}
+.tcard .mono{font-family:var(--serif);font-style:italic;font-weight:500;font-size:54px;color:var(--sage-deep);opacity:.55}
+.tcard:nth-child(even) .mono{color:var(--terra-deep)}
+.tcard .head img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
+.tcard .body{padding:18px 18px 22px}
+.tcard h3{font-size:17.5px}
+.tcard .cred{display:inline-block;margin-top:6px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sage-deep);background:var(--sage-tint);border-radius:100px;padding:4px 11px}
+.tcard:nth-child(even) .cred{color:var(--terra-ink);background:var(--terra-tint)}
+.tcard p{margin-top:11px;font-size:14px;color:var(--muted);line-height:1.55}
+.team-note{margin-top:34px;text-align:center;color:var(--muted);font-size:15px}
+.team-note .serif-i{color:var(--sage-deep)}
+
+/* ====================== MAP BAND ====================== */
+.mapband{background:var(--cream)}
+.mapband .grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.mapband h2{font-size:clamp(28px,3.8vw,44px)}
+.mapband h2 .serif-i{color:var(--terra-deep)}
+.mapband p.body{color:var(--muted);font-size:17px;margin-top:18px;max-width:48ch}
+.map-stats{display:flex;gap:34px;margin-top:30px;flex-wrap:wrap}
+.map-stats div b{font-size:26px;font-weight:800;color:var(--navy);display:block;line-height:1.1}
+.map-stats div small{font-size:13px;color:var(--muted);font-weight:600}
+.co-map{position:relative;background:var(--paper);border:1px solid var(--line-2);border-radius:var(--r-lg);box-shadow:var(--shadow-sm);padding:clamp(18px,2.6vw,30px)}
+.co-map svg{width:100%;height:auto;display:block;overflow:visible}
+/* real county geometry (US Census, Albers projection); zones are county groups, not facility pins */
+.co-base path{fill:#F0F4F0;stroke:#fff;stroke-width:1;stroke-linejoin:round}
+.co-outline{fill:none;stroke:var(--sage-deep);stroke-width:1.5;stroke-linejoin:round;opacity:.85}
+.co-glow path{fill:var(--sage);opacity:.3;filter:url(#zglow);transition:opacity .35s}
+.co-glow path.hot{opacity:.6}
+.co-routes path{fill:none;stroke:var(--terra);stroke-width:1.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;opacity:.8;transition:stroke-dashoffset 1.5s var(--ease)}
+.co-map.in .co-routes path{stroke-dashoffset:0}
+.co-map.in .co-routes path:nth-child(2){transition-delay:.25s}.co-map.in .co-routes path:nth-child(3){transition-delay:.5s}.co-map.in .co-routes path:nth-child(4){transition-delay:.75s}
+.no-anim .co-routes path{stroke-dashoffset:0}
+/* SVG text is set in map units (the drawing renders at ~0.6x on desktop, ~0.45x on phones), so sizes look large here */
+.co-city circle{fill:#8E9CA5}.co-city text{font:600 14px var(--sans);fill:#61707A}
+.co-zone{cursor:pointer;outline:none}
+.co-zone path{fill:var(--sage);fill-opacity:.7;stroke:#fff;stroke-width:1.2;stroke-linejoin:round;transition:fill .3s,fill-opacity .3s}
+.co-zone:hover path,.co-zone:focus-visible path,.co-zone.active path{fill:var(--sage-deep);fill-opacity:.95}
+.co-zone:focus-visible path{stroke:var(--terra);stroke-width:2.2}
+.co-zone text{pointer-events:none;paint-order:stroke;stroke:#fff;stroke-width:3.5px;stroke-linejoin:round}
+.co-zone .zl{font:700 19px var(--sans);fill:var(--navy)}
+.co-zone .zc{font:600 14.5px var(--sans);fill:var(--muted)}
+@media(max-width:680px){.co-zone .zl{font-size:26px}.co-zone .zc{font-size:20px}.co-city text{display:none}.co-map .cap .live{margin-left:0;flex-basis:100%}}
+.co-home{pointer-events:none}
+.co-home .pulse-ring{fill:none;stroke:var(--terra);stroke-width:2}
+.co-home .hb{fill:var(--terra);stroke:#fff;stroke-width:3}
+.co-map .cap{display:flex;gap:18px;align-items:center;margin-top:14px;font-size:12px;color:var(--muted);font-weight:600;flex-wrap:wrap}
+.co-map .cap .key{display:inline-flex;align-items:center;gap:7px}
+.co-map .cap .key i{width:9px;height:9px;border-radius:50%;background:var(--terra);display:inline-block}
+.co-map .cap .key.k2 i{background:var(--sage)}
+.co-map .cap .live{margin-left:auto;color:var(--navy);font-weight:700}
+.map-more{margin-top:16px;padding:12px 16px;border-radius:14px;background:var(--terra-tint);font-size:13.5px;color:var(--ink);display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.map-more b{color:var(--navy)}
+.map-more a{color:var(--terra-ink);font-weight:700;display:inline-flex;align-items:center;gap:5px}
+.map-more a svg{width:14px;height:14px}
+@keyframes ring{0%{r:6;opacity:.85}100%{r:26;opacity:0}}
+.pulse-ring{animation:ring 2.6s ease-out infinite;transform-origin:center}
+.pulse-ring.r2{animation-delay:1.3s}
+
+/* contact — navy block */
+.contact{background:linear-gradient(165deg,#1E3752,var(--navy) 55%,#16293E);position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(92,140,125,.30),transparent 70%);bottom:-220px;left:-140px}
+.contact::after{content:"";position:absolute;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(221,138,92,.22),transparent 70%);top:-180px;right:-120px}
+.contact .wrap{position:relative;z-index:2}
+.contact .eyebrow{color:#F2C9A6}
+.contact .grid{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:start}
+.contact h2{font-size:clamp(30px,4.4vw,50px);color:#fff}
+.contact h2 .serif-i{color:var(--terra)}
+.contact .lede{color:rgba(255,255,255,.78);font-size:17.5px;margin-top:20px;max-width:44ch}
+.contact-rows{margin-top:34px;display:flex;flex-direction:column;gap:8px}
+.crow{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.13)}
+.crow .ic{width:46px;height:46px;border-radius:13px;flex:none;display:grid;place-items:center;background:rgba(255,255,255,.09);color:#CDE4D6}
+.crow:nth-child(even) .ic{color:#F2C9A6}
+.crow .ic svg{width:20px;height:20px}
+.crow small{display:block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);font-weight:700}
+.crow b{font-size:17px;font-weight:700;color:#fff}
+.form-card{background:var(--paper);border-radius:var(--r-lg);padding:38px 34px;box-shadow:var(--shadow);border:1px solid var(--line-2)}
+.form-card h3{font-size:23px}
+.form-card .fh{color:var(--muted);font-size:14.5px;margin-top:6px}
+.field{margin-top:18px}
+.field label{display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:7px}
+.field input,.field select,.field textarea{width:100%;font-family:var(--sans);font-size:15.5px;color:var(--ink);padding:13px 15px;border-radius:13px;border:1.5px solid var(--line);background:var(--bg);transition:border-color .25s,background .25s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--terra);background:#fff}
+.field textarea{resize:vertical;min-height:92px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.phi-note{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:12.5px;color:var(--sage-deep);background:var(--sage-tint);border-radius:12px;padding:12px 14px;line-height:1.5}
+.phi-note svg{width:16px;height:16px;flex:none;margin-top:1px}
+.form-card .btn{width:100%;justify-content:center;margin-top:20px}
+.form-ok{display:none;text-align:center;padding:16px 0}
+.form-ok.show{display:block}
+.form-ok .big-ck{width:64px;height:64px;border-radius:50%;background:var(--sage-soft);color:var(--sage-deep);display:grid;place-items:center;margin:0 auto 16px}
+.form-ok .big-ck svg{width:32px;height:32px}
+
+/* footer */
+footer{background:#122236;color:rgba(255,255,255,.72);padding:66px 0 30px;border-top:1px solid rgba(255,255,255,.07)}
+.foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-top p{margin-top:18px;font-size:14.5px;max-width:36ch}
+.foot-col h4{color:#fff;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px;font-weight:700}
+.foot-col a{display:block;font-size:15px;margin-bottom:11px;transition:color .2s,padding-left .2s}
+.foot-col a:hover{color:var(--terra-soft);padding-left:4px}
+.foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-top:26px;font-size:13px}
+.foot-bottom .serif-i{color:var(--terra-soft)}
+.totop{position:fixed;right:24px;bottom:24px;z-index:90;width:50px;height:50px;border-radius:50%;background:var(--terra);color:#fff;border:none;cursor:pointer;display:grid;place-items:center;box-shadow:var(--shadow);opacity:0;transform:translateY(20px) scale(.8);pointer-events:none;transition:.4s var(--ease)}
+.totop.show{opacity:1;transform:none;pointer-events:auto}
+.totop{color:var(--navy)}
+.totop:hover{background:#E6996E}
+.totop svg{width:20px;height:20px}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* ---- cinematic hero engine ---- */
+.hero-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block}
+.hero-grain{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.5;mix-blend-mode:soft-light;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero .wrap{position:relative;z-index:3}
+.hero-orb{z-index:2}
+/* kinetic headline */
+.hero-title{font-size:clamp(42px,5.9vw,74px);letter-spacing:-.03em;line-height:1.04;margin:24px 0 0;color:var(--navy);font-weight:700}
+.hero-title .wm{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}
+.hero-title .w{display:inline-block;will-change:transform}
+.hero-title .serif-i{color:var(--terra-deep)}
+.no-anim .reveal{opacity:1!important;transform:none!important}
+/* scroll-hint under hero */
+.scroll-hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:4;display:flex;flex-direction:column;align-items:center;gap:7px;color:var(--sage-deep);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;opacity:.75}
+.scroll-hint .m{width:22px;height:34px;border:2px solid rgba(62,101,90,.4);border-radius:12px;position:relative}
+.scroll-hint .m::after{content:"";position:absolute;top:6px;left:50%;transform:translateX(-50%);width:3px;height:7px;border-radius:2px;background:var(--terra);animation:sc 1.8s infinite}
+@keyframes sc{0%{opacity:0;transform:translate(-50%,0)}40%{opacity:1}80%{opacity:0;transform:translate(-50%,11px)}}
+
+@media(max-width:1100px){
+  .team-grid .tcard{flex-basis:calc((100% - 40px)/3)}
+}
+@media(max-width:980px){
+  .hero .wrap,.about .grid,.contact .grid,.journey,.explorer,.why .grid,.mapband .grid{grid-template-columns:1fr;gap:44px}
+  .hero-visual{height:440px;max-width:480px}
+  .statband .row{grid-template-columns:repeat(2,1fr);gap:26px}
+  .statband .cell{border-left:none;padding:0}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .x-detail{display:none}
+  .x-inline{display:none}
+  .x-row.open + .x-inline{display:block}
+  .acc{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .nav-links,.nav .cta-wrap .btn-ghost{display:none}
+  .menu-btn{display:flex}
+  .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);padding:8px 20px 18px;box-shadow:var(--shadow);align-items:stretch}
+  .nav-links.open a{padding:14px 4px;border-bottom:1px solid var(--line);opacity:1}
+  /* phones: one compact row per clinician instead of a screen-tall card each */
+  .team-grid{gap:14px}
+  .team-grid .tcard{flex-basis:100%;display:grid;grid-template-columns:96px 1fr}
+  .tcard .head{aspect-ratio:auto;min-height:100%}
+  .tcard .mono{font-size:32px}
+  .tcard .body{padding:14px 16px 16px}
+  .tcard p{margin-top:8px;font-size:13.5px}
+  .two{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr}
+  .hv-chip.c1,.hv-chip.c2{display:none}
+  .statband .row{grid-template-columns:1fr}
+}
+/* the header button wrapped to two lines and crowded the logo; the hero has the same button */
+@media(max-width:520px){
+  .nav .cta-wrap .btn-primary{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<nav class="nav" id="nav">
+  <a href="#top" class="logo" aria-label="Lavida Heal home">
+    <img class="mark" src="assets/logo-mark.png" alt="" width="46" height="44">
+    <span class="words"><b>Lavida<span>&nbsp;Heal</span></b><small>WOUND CARE</small></span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="#approach">Approach</a><a href="#services">Services</a><a href="#why">Outcomes</a><a href="#contact">Contact</a>
+  </div>
+  <div class="cta-wrap">
+    <a href="#contact" class="btn btn-primary magnetic">Schedule Intro
+      <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<main id="main">
+<header class="hero" id="top">
+  <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero-grain" aria-hidden="true"></div>
+  <span class="hero-orb o1" data-par="0.25"></span><span class="hero-orb o2" data-par="-0.18"></span>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="hero-pill"><span class="dot"></span>Colorado · SNF Wound Care</span>
+      <h1 class="hero-title"><span class="wm"><span class="w">Expert</span></span> <span class="wm"><span class="w">wound</span></span> <span class="wm"><span class="w">care,</span></span><br><span class="wm"><span class="w">brought</span></span> <span class="wm"><span class="w">to</span></span> <span class="wm"><span class="w">the</span></span> <span class="wm"><span class="w serif-i">bedside.</span></span></h1>
+      <p class="lede">Specialty bedside wound management for Colorado's skilled nursing facilities — patient-first, evidence-based, and delivered in partnership with your nurses.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary magnetic">Schedule a facility introduction
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="#approach" class="btn btn-ghost">See how it works</a>
+      </div>
+      <div class="hero-trust">
+        <span><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5 9-11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Weekly bedside rounds</span>
+        <span><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5 9-11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Same-day findings</span>
+        <span><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5 9-11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Fewer transfers</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hv-photo" data-par="0.08">
+        <div class="ph-inner">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-9-9C1.5 8 3.5 4 7 4c2 0 3.5 1.5 5 3 1.5-1.5 3-3 5-3 3.5 0 5.5 4 4 8-2 4.5-9 9-9 9Z" stroke="currentColor" stroke-width="1.6"/></svg></div>
+          <small>Care photo</small>
+        </div>
+        <img class="cover-img" src="photos/hero-care.jpg" alt="A caregiver gently holding a resident's hands" onerror="this.remove()">
+      </div>
+      <div class="hv-badge"><b>Care built around each resident.</b><small>Patient-first</small></div>
+      <div class="hv-chip c1"><span class="ci" style="background:var(--sage-soft);color:var(--sage-deep)"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/></svg></span><div><b>On-site</b><small>at the bedside</small></div></div>
+      <div class="hv-chip c2"><span class="ci" style="background:var(--terra-soft);color:var(--terra-deep)"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5 9-11" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Same-day</b><small>findings shared</small></div></div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><div class="m"></div>Scroll</div>
+</header>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip">
+  <div class="wrap">
+    <span class="lab">How we work</span>
+    <div class="pills">
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-9-9C1.5 8 3.5 4 7 4c2 0 3.5 1.5 5 3 1.5-1.5 3-3 5-3 3.5 0 5.5 4 4 8-2 4.5-9 9-9 9Z" stroke="currentColor" stroke-width="1.7"/></svg>Patient-first</span>
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.7"/></svg>Clinically thorough</span>
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5 9-11" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Evidence-based</span>
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19h16M7 16V9m5 7V5m5 11v-5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>Nurse-partnered</span>
+    </div>
+  </div>
+</section>
+
+<!-- STAT BAND -->
+<section class="statband">
+  <div class="wrap">
+    <div class="row">
+      <div class="cell reveal"><b><span data-count="6">0</span></b><div class="lab">Step care pathway</div><div class="sub">Consult to healing &amp; handoff</div></div>
+      <div class="cell reveal d1"><b>Same&#8209;day</b><div class="lab">Findings to your team</div><div class="sub">Medical director &amp; nursing</div></div>
+      <div class="cell reveal d2"><b>In&#8209;house</b><div class="lab">Wound management</div><div class="sub">Supporting fewer ER transfers</div></div>
+      <div class="cell reveal d3"><b>PCC</b><div class="lab">Integrated charting</div><div class="sub">Documented in your EMR</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="wrap">
+    <div class="grid">
+      <div class="about-visual reveal">
+        <div class="about-photo">
+          <div class="ph"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.7"/><path d="M3 19c0-3.2 3-5.2 6-5.2s6 2 6 5.2M15 19c0-2.1.6-3.6 2-4.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><small>Clinician &amp; resident photo</small></div>
+          <img class="cover-img" src="photos/about-clinician.jpg" alt="A clinician reachable by phone" onerror="this.remove()">
+        </div>
+      </div>
+      <div class="about-copy reveal d2">
+        <span class="eyebrow">Who we are</span>
+        <h2>Wound care that starts with <span class="serif-i">the person in the bed.</span></h2>
+        <p class="body">Lavida Heal is a wound care group serving skilled nursing facilities across Colorado. We bring evidence-based wound management directly to the bedside — so residents get the care they need without leaving the comfort of home, and your team gets a clinical partner they can reach.</p>
+        <ul class="check-list">
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5 9-11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Physicians, surgeons &amp; advanced-practice practitioners with specialized wound-care training</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5 9-11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>On-site care that helps residents avoid transport to the hospital and doctor's office</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5 9-11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Findings and outcomes shared with your team the same day</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH — interactive journey -->
+<section class="section approach" id="approach">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Follow a resident's <span class="serif-i">journey with us.</span></h2>
+      <p>Click through the pathway — or just watch it play. Evidence-based care that slots into how your facility already operates.</p>
+    </div>
+    <div class="journey reveal">
+      <div class="j-list" id="jList" role="tablist" aria-label="Care journey steps"></div>
+      <div class="j-stage" id="jStage">
+        <div class="big-n" id="jBigN">01</div>
+        <div class="j-body" id="jBody">
+          <span class="tag">Our approach</span>
+          <h3 id="jTitle"></h3>
+          <p id="jDesc"></p>
+        </div>
+        <div class="foot">
+          <button class="ctrl" id="jPrev" aria-label="Previous step"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5m6-6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button class="ctrl" id="jNext" aria-label="Next step"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <span class="hint" id="jHint">Auto-playing — hover to pause</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES — interactive explorer -->
+<section class="section services" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Services</span>
+      <h2>Explore what we bring to <span class="serif-i">your wound program.</span></h2>
+      <p>Hover or tap any service — comprehensive wound management, from initial evaluation through healing.</p>
+    </div>
+    <div class="explorer reveal">
+      <div class="x-list" id="xList"></div>
+      <div class="x-detail" id="xDetail">
+        <div class="d-body" id="xBody">
+          <div class="d-ic" id="xIc"></div>
+          <h3 id="xTitle"></h3>
+          <p id="xDesc"></p>
+        </div>
+        <div class="d-tag" id="xTag"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ESCALATION QUOTE -->
+<section class="section escalate">
+  <div class="wrap">
+    <div class="q reveal">
+      <span class="eyebrow center">Escalation &amp; surgical expertise</span>
+      <p class="big">Not every wound requires transfer. Not every wound can stay in place. <span class="serif-i">Our role is helping facilities recognize the difference — early.</span></p>
+      <p class="sub">Flaps, grafts, dehiscence, exposed hardware, and challenging postoperative wounds — managed by a clinical team with surgical expertise, with prompt escalation when operative intervention is needed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES / WHY -->
+<section class="section why" id="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why facilities partner with us</span>
+      <h2>Outcomes for residents. <span class="serif-i">Operational lift for facilities.</span></h2>
+    </div>
+    <div class="acc reveal d1" id="acc"></div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<!-- Team section parked until headshots exist: see _team-section.html (local only, not published). -->
+
+<!-- COLORADO MAP — coverage zones on real county geometry (generated by scratchpad mapgen.py from Census county shapes) -->
+<section class="section mapband" id="coverage">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <span class="eyebrow">Where we serve</span>
+        <h2>Based in Denver, <span class="serif-i">at bedsides across Colorado.</span></h2>
+        <p class="body">Our clinicians round from Denver out to five coverage zones — the metro, the Northeast plains, the Western Slope, the Arkansas Valley and the Royal Gorge — on a scheduled weekly rhythm, with a clinician reachable in between. Not in a zone yet? Coverage grows as facilities join.</p>
+        <div class="map-stats">
+          <div><b>Denver</b><small>Home base</small></div>
+          <div><b>5 zones</b><small>Across Colorado</small></div>
+          <div><b>Weekly</b><small>Scheduled rounds</small></div>
+        </div>
+      </div>
+      <div class="co-map reveal d1">
+        <svg class="comap-svg" viewBox="-8 -8 776 568" role="group" aria-labelledby="comapTitle comapDesc">
+<title id="comapTitle">Map of Colorado showing Lavida Heal coverage zones</title>
+<desc id="comapDesc">Home base in Denver with coverage zones in the Denver metro, the Northeast plains around Sterling and Holyoke, the Western Slope around Grand Junction and Montrose, the Arkansas Valley around La Junta and Holly, and the Royal Gorge around Cañon City.</desc>
+<defs><filter id="zglow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter><radialGradient id="hbGlow"><stop offset="0" stop-color="#DD8A5C" stop-opacity=".45"/><stop offset="1" stop-color="#DD8A5C" stop-opacity="0"/></radialGradient></defs>
+<g class="co-base"><path d="M386.2,472.3 358.4,502.3 326.5,502.2 326.8,449.0 389.3,448.7Z"/><path d="M278.8,551.2 169.6,548.6 170.8,491.2 208.9,491.9 208.9,496.0 257.5,495.2 257.2,519.0Z"/><path d="M760.0,544.4 646.7,547.2 645.4,459.8 756.7,456.0Z"/><path d="M430.6,107.4 431.1,146.0 427.4,148.5 429.1,148.7 428.7,150.7 425.2,151.6 425.2,153.3 425.2,148.8 423.3,149.2 421.3,154.7 395.2,154.9 395.1,151.9 366.2,152.3 370.1,137.8 368.6,107.7Z"/><path d="M270.9,270.5 311.7,271.2 320.0,287.0 328.8,286.6 339.6,296.3 341.6,305.2 334.8,320.6 344.4,332.3 341.2,346.1 330.3,354.1 305.1,357.2 283.7,319.5 297.3,290.8 282.6,290.7 268.5,278.6 268.8,272.3Z"/><path d="M748.8,265.5 751.2,324.2 631.6,328.4 631.1,270.6Z"/><path d="M395.1,202.1 350.0,202.2 353.9,192.5 340.1,183.9 344.1,170.6 359.8,169.6 364.7,163.2 379.8,173.9 395.2,177.5Z"/><path d="M361.0,551.4 278.8,551.2 257.2,519.0 257.5,495.2 326.5,496.2 326.5,502.2 358.4,502.3 359.8,526.3 355.4,542.5Z"/><path d="M422.2,551.3 361.0,551.4 355.4,542.5 359.8,526.3 358.4,502.3 386.2,472.3 406.7,461.9 418.3,466.5 422.1,510.9Z"/><path d="M597.7,376.5 597.2,389.0 585.5,389.4 585.7,397.3 562.5,397.8 538.7,393.7 538.3,342.6 596.7,342.3Z"/><path d="M432.7,379.7 432.9,426.3 417.3,413.8 407.7,428.6 404.3,423.2 387.5,429.1 373.5,413.7 365.8,395.1 353.0,378.9Z"/><path d="M172.4,321.8 79.3,319.5 80.0,297.6 135.9,265.1 145.6,270.3 174.0,247.2Z"/><path d="M3.1,471.5 4.9,423.9 89.2,425.0 94.0,435.1 117.7,430.9 131.2,442.3 119.3,452.7 119.0,460.4 17.1,458.3 2.8,477.7Z"/><path d="M431.8,201.9 472.4,201.6 472.8,260.9 402.6,261.4 409.8,250.4Z"/><path d="M310.4,227.2 287.3,229.4 215.1,227.8 216.4,152.7 287.2,152.8 292.1,174.3 313.6,196.0 305.7,215.5Z"/><path d="M538.3,342.6 444.0,344.1 444.0,306.4 429.9,306.1 434.4,296.7 433.7,261.2 537.2,260.3Z"/><path d="M472.8,260.9 472.4,201.6 571.5,200.1 572.9,295.2 537.3,295.5 537.2,260.3Z"/><path d="M11.7,222.1 13.3,182.2 129.7,181.3 130.1,163.6 183.0,164.4 183.3,152.2 195.0,152.9 195.7,129.0 224.7,129.4 224.7,152.9 216.4,152.7 215.1,227.8Z"/><path d="M395.2,154.9 395.2,177.5 379.8,173.9 364.7,163.2 366.2,152.3 395.1,151.9Z"/><path d="M265.3,81.9 269.4,90.9 282.1,86.7 286.8,95.5 296.1,94.1 308.9,98.9 330.8,92.2 336.9,95.7 344.0,78.2 347.8,77.0 368.6,107.7 370.1,137.8 364.7,163.2 359.8,169.6 344.1,170.6 340.1,183.9 329.8,185.3 323.6,169.3 306.2,154.4 267.1,152.7 267.2,96.0Z"/><path d="M174.0,247.2 185.3,242.2 187.1,250.2 196.7,261.1 219.5,261.5 226.2,272.0 236.1,279.0 247.1,281.1 258.5,270.7 282.6,290.7 297.3,290.8 283.7,319.5 305.1,357.2 224.9,355.9 224.3,393.7 163.7,392.5 157.1,371.4 171.4,371.7Z"/><path d="M170.8,491.2 173.4,438.6 168.3,436.2 163.1,417.3 169.6,404.4 163.7,392.5 224.3,393.7 223.9,419.7 209.1,421.8 208.9,491.9Z"/><path d="M387.5,429.1 404.3,423.2 407.7,428.6 417.3,413.8 436.8,430.9 476.2,428.0 508.0,438.9 497.0,449.4 487.1,467.4 487.1,472.1 476.4,483.0 471.4,484.4 471.5,490.6 465.8,495.1 439.2,499.6 422.1,510.9 418.3,466.5 406.7,461.9 386.2,472.3 392.3,435.1Z"/><path d="M300.2,7.0 313.6,7.2 314.1,16.0 327.1,31.9 347.8,77.0 344.0,78.2 336.9,95.7 330.8,92.2 308.9,98.9 296.1,94.1 286.8,95.5 282.1,86.7 269.4,90.9 265.3,81.9 260.1,58.5 267.5,35.1 265.8,27.0 248.4,15.5 245.6,16.4 245.2,5.8Z"/><path d="M751.4,328.7 753.1,371.2 597.7,376.5 596.7,342.3 631.9,340.2 631.6,328.4 751.2,324.2Z"/><path d="M745.7,193.9 748.8,265.5 631.1,270.6 630.1,198.8Z"/><path d="M169.6,548.6 72.3,546.1 93.4,498.4 110.9,485.7 113.1,466.9 119.0,460.4 171.4,461.7Z"/><path d="M287.3,229.4 317.8,227.2 312.7,236.7 311.7,271.2 270.9,270.5 278.4,255.8 281.0,236.0Z"/><path d="M407.3,7.4 441.5,7.3 441.9,95.4 430.4,95.5 430.6,107.4 368.6,107.7 347.8,77.0 327.1,31.9 314.1,16.0 313.6,7.2Z"/><path d="M546.7,549.9 422.2,551.3 422.1,510.9 439.2,499.6 465.8,495.1 471.5,490.6 471.4,484.4 476.4,483.0 487.1,472.1 487.1,467.4 497.0,449.4 508.0,438.9 539.3,449.7 539.8,462.0 645.4,459.8 646.7,547.2Z"/><path d="M596.7,342.3 538.3,342.6 537.3,295.5 572.9,295.2 571.5,200.1 630.1,198.8 631.9,340.2Z"/><path d="M256.6,436.5 254.0,495.1 208.9,496.0 210.1,457.6 207.8,457.5 209.1,421.8 236.9,419.2 256.7,431.3Z"/><path d="M20.4,0.2 198.0,5.1 197.3,59.8 185.3,67.4 183.3,111.1 16.2,105.9Z"/><path d="M1.9,492.6 2.8,477.7 17.1,458.3 119.0,460.4 113.1,466.9 110.9,485.7 93.4,498.4 72.3,546.1 0.0,543.7Z"/><path d="M525.0,141.9 524.1,70.7 594.4,69.5 595.5,140.4Z"/><path d="M144.8,425.0 138.9,413.5 127.8,408.1 129.1,396.0 121.3,390.8 124.5,381.8 108.8,376.5 104.2,366.0 157.1,367.2 163.7,392.5 169.6,404.4 163.1,417.3Z"/><path d="M395.1,202.1 395.3,261.4 402.4,261.4 402.7,320.1 334.8,320.6 341.6,305.2 339.6,296.3 328.8,286.6 320.0,287.0 311.7,271.2 312.7,236.7 317.8,227.2 330.2,229.2 335.6,219.4 351.3,205.8 350.0,202.2Z"/><path d="M185.3,242.2 178.0,233.1 181.8,227.2 287.3,229.4 281.0,236.0 278.4,255.8 270.6,271.8 268.8,272.3 268.5,278.6 258.5,270.7 247.1,281.1 236.1,279.0 226.2,272.0 219.5,261.5 196.7,261.1 187.1,250.2Z"/><path d="M538.3,342.6 539.3,449.7 476.2,428.0 436.8,430.9 432.9,426.3 432.7,379.7 444.3,379.6 444.0,344.1Z"/><path d="M15.4,128.1 16.2,105.9 225.0,111.2 224.7,129.4 195.7,129.0 195.0,152.9 183.3,152.2 183.0,164.4 130.1,163.6 129.7,181.3 13.3,182.2Z"/><path d="M254.0,495.1 256.6,436.5 268.0,436.8 268.0,448.6 326.8,449.0 326.5,496.2Z"/><path d="M230.5,5.6 245.2,5.8 245.6,16.4 248.4,15.5 265.8,27.0 267.5,35.1 260.1,58.5 267.2,96.0 267.1,153.5 224.7,152.9 225.0,111.2 183.3,110.7 185.3,67.4 197.3,59.8 198.0,5.1Z"/><path d="M305.1,357.2 330.3,354.1 365.8,395.1 373.5,413.7 392.3,435.1 389.3,448.7 268.0,448.6 268.0,436.8 256.6,436.5 256.7,431.3 236.9,419.2 223.9,419.7 224.9,355.9Z"/><path d="M144.8,425.0 163.1,417.3 168.3,436.2 173.4,438.6 171.4,461.7 119.0,460.4 119.3,452.7 131.2,442.3Z"/><path d="M4.9,423.9 6.4,387.0 121.3,390.8 129.1,396.0 127.8,408.1 138.9,413.5 144.8,425.0 131.2,442.3 117.7,430.9 94.0,435.1 89.2,425.0Z"/><path d="M676.4,2.2 738.1,0.0 739.4,34.3 677.7,36.5Z"/><path d="M287.2,152.8 306.2,154.4 323.6,169.3 329.8,185.3 340.1,183.9 353.9,192.5 350.0,202.2 351.3,205.8 335.6,219.4 330.2,229.2 310.4,227.2 305.7,215.5 313.6,196.0 292.1,174.3Z"/><path d="M402.4,261.4 433.7,261.2 434.4,296.7 429.9,306.1 444.0,306.4 443.8,326.4 412.2,326.9 412.4,320.2 402.7,320.1Z"/><path d="M571.2,141.0 595.5,140.4 594.9,81.3 665.7,79.2 665.0,138.4 666.9,197.5 572.3,200.1Z"/><path d="M447.8,7.2 581.9,4.8 582.6,69.8 524.1,70.7 525.0,141.9 440.6,142.8 440.5,136.9 438.7,136.9 438.6,138.9 436.6,139.4 437.6,141.9 430.8,142.9 430.4,95.5 441.9,95.4 441.5,7.3Z"/><path d="M741.0,76.3 745.7,193.9 666.9,197.5 665.0,138.4 665.7,79.2Z"/></g>
+<g class="co-glow"><path data-zone="metro" d="M571.9,176.5 448.8,178.2 451.7,174.3 464.4,174.1 461.5,166.8 476.3,166.2 478.3,156.2 468.6,154.3 458.5,170.2 431.2,171.3 431.1,154.7 440.6,142.8 571.2,141.0ZM448.8,178.2 571.9,176.5 572.3,200.1 431.2,201.9 431.3,193.0 433.2,193.5 435.2,186.6 444.0,190.0 445.9,193.9 448.9,193.9 449.4,190.0 449.8,191.2 452.8,189.5ZM421.3,154.7 423.3,149.2 425.2,148.8 425.2,153.3 425.2,151.6 428.7,150.7 429.1,148.7 427.3,148.7 431.1,146.0 431.0,142.9 437.6,141.9 436.6,139.4 440.5,136.9 440.6,142.8 431.1,154.7ZM431.3,194.4 426.7,195.4 430.1,194.6 428.3,193.0 425.3,193.7 431.1,190.3 428.3,188.9 431.2,188.1 430.0,171.4 458.5,170.2 468.6,154.3 478.3,156.2 476.3,166.2 461.5,166.8 464.4,174.1 451.7,174.3 448.8,178.2 452.8,189.5 449.8,191.2 449.4,190.0 448.9,193.9 445.9,193.9 444.0,190.0 435.2,186.6 433.2,193.5 431.3,193.0ZM428.3,192.6ZM427.1,194.8 431.3,194.4 431.8,201.9 409.8,250.4 402.6,261.4 395.3,261.4 395.2,154.9 431.1,154.7 431.2,171.3 429.9,171.8 431.2,172.3 431.2,188.1 428.3,187.8 429.4,190.6 431.1,190.3 425.3,192.6 425.5,194.1 428.3,193.0 430.1,194.6Z"/><path data-zone="ne" d="M581.9,4.8 676.4,2.2 677.6,78.8 594.9,81.3 594.4,69.5 582.6,69.8ZM739.7,41.4 741.0,76.3 677.6,78.8 677.7,36.5 739.4,34.3Z"/><path data-zone="west" d="M6.3,339.8 11.7,222.1 181.8,227.2 178.0,233.1 185.3,242.2 174.0,247.2 145.6,270.3 135.9,265.1 80.0,297.6 78.6,342.3ZM6.4,386.6 5.1,370.3 6.3,339.8 78.6,342.3 79.3,319.5 172.4,321.8 171.4,371.7 157.1,371.4 157.1,367.2 104.2,366.0 108.8,376.5 124.5,381.8 121.3,390.8Z"/><path data-zone="se" d="M609.7,440.4 608.6,376.1 678.7,374.0 680.8,458.7 610.1,460.6ZM585.7,397.3 585.5,389.4 597.2,389.0 597.7,376.5 608.6,376.1 610.1,460.6 539.8,462.0 538.7,393.7 562.5,397.8ZM753.1,372.1 756.7,456.0 680.8,458.7 678.7,374.0Z"/><path data-zone="south" d="M444.0,344.1 444.3,379.6 353.0,378.9 330.3,354.1 341.2,346.1 344.4,332.3 334.8,320.6 412.4,320.2 412.2,326.9 443.8,326.4Z"/></g>
+<path class="co-outline" d="M20.4,0.3 32.3,0.8 44.3,1.2 56.2,1.6 68.2,2.0 80.2,2.4 92.1,2.8 104.1,3.2 116.1,3.5 128.0,3.8 140.0,4.1 151.9,4.4 163.9,4.7 175.9,5.0 187.8,5.3 199.8,5.5 211.8,5.7 223.7,5.9 235.7,6.1 247.7,6.3 259.6,6.4 271.6,6.6 283.6,6.7 295.5,6.8 307.5,6.9 319.5,7.0 331.4,7.1 343.4,7.1 355.4,7.2 367.3,7.2 379.3,7.2 391.3,7.2 403.2,7.2 415.2,7.1 427.2,7.1 439.1,7.0 451.1,6.9 463.1,6.8 475.0,6.7 487.0,6.6 499.0,6.4 510.9,6.3 522.9,6.1 534.9,5.9 546.8,5.7 558.8,5.5 570.8,5.3 582.7,5.0 594.7,4.7 606.7,4.4 618.6,4.1 630.6,3.8 642.6,3.5 654.5,3.2 666.5,2.8 678.4,2.4 690.4,2.0 702.4,1.6 714.3,1.2 726.3,0.8 738.2,0.3 738.2,0.3 738.8,13.9 739.3,27.5 739.8,41.0 740.3,54.6 740.8,68.2 741.4,81.8 741.9,95.4 742.4,108.9 742.9,122.5 743.5,136.1 744.0,149.7 744.5,163.3 745.0,176.8 745.5,190.4 746.1,204.0 746.6,217.6 747.1,231.2 747.6,244.7 748.2,258.3 748.7,271.9 749.2,285.5 749.7,299.1 750.2,312.7 750.8,326.2 751.3,339.8 751.8,353.4 752.3,367.0 752.9,380.6 753.4,394.1 753.9,407.7 754.4,421.3 754.9,434.9 755.5,448.5 756.0,462.0 756.5,475.6 757.0,489.2 757.6,502.8 758.1,516.4 758.6,529.9 759.1,543.5 759.1,543.5 746.5,544.0 733.8,544.4 721.2,544.9 708.5,545.3 695.8,545.7 683.2,546.1 670.5,546.5 657.9,546.9 645.2,547.2 632.6,547.6 619.9,547.9 607.2,548.2 594.6,548.5 581.9,548.7 569.2,549.0 556.6,549.2 543.9,549.4 531.3,549.6 518.6,549.8 505.9,550.0 493.3,550.1 480.6,550.3 467.9,550.4 455.3,550.5 442.6,550.6 430.0,550.7 417.3,550.7 404.6,550.8 392.0,550.8 379.3,550.8 366.6,550.8 354.0,550.8 341.3,550.7 328.6,550.7 316.0,550.6 303.3,550.5 290.7,550.4 278.0,550.3 265.3,550.1 252.7,550.0 240.0,549.8 227.3,549.6 214.7,549.4 202.0,549.2 189.4,549.0 176.7,548.7 164.0,548.5 151.4,548.2 138.7,547.9 126.1,547.6 113.4,547.2 100.7,546.9 88.1,546.5 75.4,546.1 62.8,545.7 50.1,545.3 37.5,544.9 24.8,544.4 12.1,544.0 -0.5,543.5 -0.5,543.5 0.0,529.9 0.5,516.4 1.1,502.8 1.6,489.2 2.1,475.6 2.6,462.0 3.1,448.5 3.7,434.9 4.2,421.3 4.7,407.7 5.2,394.1 5.8,380.6 6.3,367.0 6.8,353.4 7.3,339.8 7.8,326.2 8.4,312.7 8.9,299.1 9.4,285.5 9.9,271.9 10.5,258.3 11.0,244.7 11.5,231.2 12.0,217.6 12.5,204.0 13.1,190.4 13.6,176.8 14.1,163.3 14.6,149.7 15.2,136.1 15.7,122.5 16.2,108.9 16.7,95.4 17.2,81.8 17.8,68.2 18.3,54.6 18.8,41.0 19.3,27.5 19.8,13.9 20.4,0.3Z"/>
+<g class="co-routes"><path pathLength="1" d="M437.8,178.2 Q572.3,135.9 649.0,17.5"/><path pathLength="1" d="M437.8,178.2 Q235.3,178.5 79.5,307.7"/><path pathLength="1" d="M437.8,178.2 Q513.0,342.8 675.8,421.7"/><path pathLength="1" d="M437.8,178.2 Q384.7,252.8 391.3,344.1"/></g>
+<g class="co-city"><circle cx="427.8" cy="62.8" r="2.6"/><text x="434.8" y="66.8" text-anchor="start">Fort Collins</text></g>
+<g class="co-city"><circle cx="456.5" cy="301.8" r="2.6"/><text x="463.5" y="305.8" text-anchor="start">Colorado Springs</text></g>
+<g class="co-city"><circle cx="479.6" cy="380.4" r="2.6"/><text x="486.6" y="384.4" text-anchor="start">Pueblo</text></g>
+<g class="co-city"><circle cx="127.4" cy="509.5" r="2.6"/><text x="134.4" y="513.5" text-anchor="start">Durango</text></g>
+<g class="co-city"><circle cx="408.4" cy="141.7" r="2.6"/><text x="415.4" y="145.7" text-anchor="start">Boulder</text></g>
+<g class="co-zone" data-zone="metro" data-label="Denver metro" data-cities="Lakewood · Aurora · Thornton · Arvada" tabindex="0" role="button" aria-label="Denver metro coverage zone: Lakewood · Aurora · Thornton · Arvada"><path d="M571.9,176.5 448.8,178.2 451.7,174.3 464.4,174.1 461.5,166.8 476.3,166.2 478.3,156.2 468.6,154.3 458.5,170.2 431.2,171.3 431.1,154.7 440.6,142.8 571.2,141.0ZM448.8,178.2 571.9,176.5 572.3,200.1 431.2,201.9 431.3,193.0 433.2,193.5 435.2,186.6 444.0,190.0 445.9,193.9 448.9,193.9 449.4,190.0 449.8,191.2 452.8,189.5ZM421.3,154.7 423.3,149.2 425.2,148.8 425.2,153.3 425.2,151.6 428.7,150.7 429.1,148.7 427.3,148.7 431.1,146.0 431.0,142.9 437.6,141.9 436.6,139.4 440.5,136.9 440.6,142.8 431.1,154.7ZM431.3,194.4 426.7,195.4 430.1,194.6 428.3,193.0 425.3,193.7 431.1,190.3 428.3,188.9 431.2,188.1 430.0,171.4 458.5,170.2 468.6,154.3 478.3,156.2 476.3,166.2 461.5,166.8 464.4,174.1 451.7,174.3 448.8,178.2 452.8,189.5 449.8,191.2 449.4,190.0 448.9,193.9 445.9,193.9 444.0,190.0 435.2,186.6 433.2,193.5 431.3,193.0ZM428.3,192.6ZM427.1,194.8 431.3,194.4 431.8,201.9 409.8,250.4 402.6,261.4 395.3,261.4 395.2,154.9 431.1,154.7 431.2,171.3 429.9,171.8 431.2,172.3 431.2,188.1 428.3,187.8 429.4,190.6 431.1,190.3 425.3,192.6 425.5,194.1 428.3,193.0 430.1,194.6Z"/><text class="zl" x="401.8" y="174.2" text-anchor="end">Denver metro</text><text class="zc" x="401.8" y="192.2" text-anchor="end">Lakewood · Aurora · Thornton · Arvada</text></g>
+<g class="co-zone" data-zone="ne" data-label="Northeast plains" data-cities="Sterling · Holyoke" tabindex="0" role="button" aria-label="Northeast plains coverage zone: Sterling · Holyoke"><path d="M581.9,4.8 676.4,2.2 677.6,78.8 594.9,81.3 594.4,69.5 582.6,69.8ZM739.7,41.4 741.0,76.3 677.6,78.8 677.7,36.5 739.4,34.3Z"/><text class="zl" x="655" y="96" text-anchor="middle">Northeast plains</text><text class="zc" x="655" y="114" text-anchor="middle">Sterling · Holyoke</text></g>
+<g class="co-zone" data-zone="west" data-label="Western Slope" data-cities="Grand Junction · Montrose" tabindex="0" role="button" aria-label="Western Slope coverage zone: Grand Junction · Montrose"><path d="M6.3,339.8 11.7,222.1 181.8,227.2 178.0,233.1 185.3,242.2 174.0,247.2 145.6,270.3 135.9,265.1 80.0,297.6 78.6,342.3ZM6.4,386.6 5.1,370.3 6.3,339.8 78.6,342.3 79.3,319.5 172.4,321.8 171.4,371.7 157.1,371.4 157.1,367.2 104.2,366.0 108.8,376.5 124.5,381.8 121.3,390.8Z"/><text class="zl" x="95" y="418" text-anchor="middle">Western Slope</text><text class="zc" x="95" y="436" text-anchor="middle">Grand Junction · Montrose</text></g>
+<g class="co-zone" data-zone="se" data-label="Arkansas Valley" data-cities="La Junta · Holly" tabindex="0" role="button" aria-label="Arkansas Valley coverage zone: La Junta · Holly"><path d="M609.7,440.4 608.6,376.1 678.7,374.0 680.8,458.7 610.1,460.6ZM585.7,397.3 585.5,389.4 597.2,389.0 597.7,376.5 608.6,376.1 610.1,460.6 539.8,462.0 538.7,393.7 562.5,397.8ZM753.1,372.1 756.7,456.0 680.8,458.7 678.7,374.0Z"/><text class="zl" x="675" y="502" text-anchor="middle">Arkansas Valley</text><text class="zc" x="675" y="520" text-anchor="middle">La Junta · Holly</text></g>
+<g class="co-zone" data-zone="south" data-label="Royal Gorge" data-cities="Cañon City" tabindex="0" role="button" aria-label="Royal Gorge coverage zone: Cañon City"><path d="M444.0,344.1 444.3,379.6 353.0,378.9 330.3,354.1 341.2,346.1 344.4,332.3 334.8,320.6 412.4,320.2 412.2,326.9 443.8,326.4Z"/><text class="zl" x="388" y="398" text-anchor="middle">Royal Gorge</text><text class="zc" x="388" y="416" text-anchor="middle">Cañon City</text></g>
+<g class="co-home"><circle cx="437.8" cy="178.2" r="46" fill="url(#hbGlow)"/><circle class="pulse-ring" cx="437.8" cy="178.2" r="6"/><circle class="pulse-ring r2" cx="437.8" cy="178.2" r="6"/><circle class="hb" cx="437.8" cy="178.2" r="7.5"/></g>
+</svg>
+        <div class="cap">
+          <span class="key"><i></i>Home base</span>
+          <span class="key k2"><i></i>Coverage zone</span>
+          <span class="live" id="mapLive" aria-live="polite">Hover or tap a zone</span>
+        </div>
+        <p class="map-more">Outside these zones? <b>We add coverage as facilities join us.</b> <a href="#contact">Tell us where you are <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <div class="grid">
+      <div class="contact-copy reveal">
+        <span class="eyebrow">Partner with us</span>
+        <h2>Let's set up a facility <span class="serif-i">introduction.</span></h2>
+        <p class="lede">A 30-minute conversation with our clinical lead to walk through coverage, onboarding, and what a Lavida Heal partnership looks like at your facility.</p>
+        <div class="contact-rows">
+          <div class="crow"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-3 2c1 2 3 4 5 5l2-3 5 2v4c0 1-1 2-2 2C10 21 3 14 3 6c0-1 1-2 2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><div><small>Clinical line</small><b>(720) 407-6815</b></div></div>
+          <div class="crow"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><div><small>Partnerships</small><b>operations@lavidaheal.com</b></div></div>
+          <div class="crow"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg></span><div><small>Service area</small><b>Colorado · Skilled nursing facilities</b></div></div>
+        </div>
+      </div>
+      <div class="reveal d2">
+        <form class="form-card" id="leadForm" novalidate>
+          <div id="formBody">
+            <h3>Request a facility introduction</h3>
+            <p class="fh">Tell us about your facility and we'll reach out to set up a 30-minute intro.</p>
+            <div class="two">
+              <div class="field"><label for="name">Your name</label><input id="name" type="text" placeholder="Jane Doe" required></div>
+              <div class="field"><label for="role">I am a…</label><select id="role"><option>Facility / SNF partner</option><option>Medical director / DON</option><option>Provider applicant</option><option>Other</option></select></div>
+            </div>
+            <div class="two">
+              <div class="field"><label for="org">Facility / organization</label><input id="org" type="text" placeholder="Facility name"></div>
+              <div class="field"><label for="email">Email</label><input id="email" type="email" placeholder="you@facility.com" required></div>
+            </div>
+            <div class="field"><label for="msg">How can we help?</label><textarea id="msg" placeholder="A little about your facility and wound-care needs…"></textarea></div>
+            <div class="phi-note"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.7"/><path d="M12 10v4M12 8h.01" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg><span>This form is for facility &amp; general inquiries. Please <b>do not include patient health information (PHI)</b> — names, diagnoses, or clinical details. Residents and families: please call <a href="tel:+17204076815">(720) 407-6815</a> rather than emailing health details.</span></div>
+            <button type="submit" class="btn btn-primary">Send request
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <div class="form-ok" id="formOk">
+            <div class="big-ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5 9-11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Almost there — your email app has the request</h3>
+            <p class="fh">Your mail app should have opened with the request filled in; press send there to deliver it. If nothing opened, email <a href="mailto:operations@lavidaheal.com">operations@lavidaheal.com</a> or call <a href="tel:+17204076815">(720) 407-6815</a>.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a href="#top" class="logo on-dark"><img class="lockup" src="assets/logo.png" alt="Lavida Heal" width="150" height="126"></a>
+        <p>Specialty bedside wound management for Colorado's skilled nursing facilities — patient-first, clinically thorough, delivered in partnership with your nurses.</p>
+      </div>
+      <div class="foot-col"><h4>Explore</h4><a href="#about">About</a><a href="#approach">How it works</a><a href="#services">Services</a><a href="#why">Outcomes</a></div>
+      <div class="foot-col"><h4>Contact</h4><a href="tel:+17204076815">(720) 407-6815</a><a href="mailto:operations@lavidaheal.com">operations@lavidaheal.com</a><a href="#contact">Schedule an introduction</a><a href="#top">3895 Upham Street, Suite 80<br>Wheat Ridge, CO 80033</a></div>
+      <div class="foot-col"><h4>Notices</h4><a href="legal.html#npp">Notice of Privacy Practices</a><a href="legal.html#nondiscrimination">Nondiscrimination &amp; language help</a><a href="legal.html#privacy">Website privacy</a><a href="legal.html#sms">Text message terms</a><a href="legal.html#accessibility">Accessibility</a><a href="legal.html#gfe">Good faith estimates</a></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Lavida Heal PLLC. All rights reserved.</span><span class="serif-i">With care, Lavida Heal.</span></div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V6M6 12l6-6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+<script src="lib/lenis.min.js"></script>
+<script src="lib/gsap.min.js"></script>
+<script src="lib/ScrollTrigger.min.js"></script>
+<script>
+/* ---------- data ---------- */
+const STEPS=[
+ {title:'Getting started',desc:'Request a resident consult through your standard order set or our facility portal.'},
+ {title:'Bedside evaluation',desc:'A wound specialist evaluates on-site during scheduled weekly rounds, with access to clinicians available for urgent needs in between.'},
+ {title:'Treatment plan',desc:'Evidence-based plan, shared with the medical director and nursing team same day.'},
+ {title:'Ongoing care',desc:'Recurring bedside visits with measurements and outcome tracking.'},
+ {title:'Facility collaboration',desc:'Findings and care decisions reviewed directly with your clinical team to keep everyone aligned around the resident.'},
+ {title:'Healing & handoff',desc:'Documented progress, discharge readiness review, and a prevention plan.'}
+];
+const ICONS={
+ heart:'<svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-9-9C1.5 8 3.5 4 7 4c2 0 3.5 1.5 5 3 1.5-1.5 3-3 5-3 3.5 0 5.5 4 4 8-2 4.5-9 9-9 9Z" stroke="currentColor" stroke-width="1.7"/></svg>',
+ drop:'<svg viewBox="0 0 24 24" fill="none"><path d="M12 3c3 4 6 6.5 6 10a6 6 0 1 1-12 0c0-3.5 3-6 6-10Z" stroke="currentColor" stroke-width="1.7"/></svg>',
+ shield:'<svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.7"/><path d="M9.5 12l1.8 1.8L15 10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+ leafline:'<svg viewBox="0 0 24 24" fill="none"><path d="M7 20c-2-3-2-6 0-9s5-4 5-8c0 4 3 5 5 8s2 6 0 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>',
+ scalpel:'<svg viewBox="0 0 24 24" fill="none"><path d="M4 15l7-7 5 5M14 6l4 4M9 20l-5 1 1-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+ warn:'<svg viewBox="0 0 24 24" fill="none"><path d="M12 3l9 16H3L12 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 10v4M12 17h.01" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>',
+ clock:'<svg viewBox="0 0 24 24" fill="none"><path d="M12 4v6l4 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/></svg>',
+ search:'<svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.7"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>',
+ book:'<svg viewBox="0 0 24 24" fill="none"><path d="M5 4h11l3 3v13H5z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 10h8M8 14h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>',
+ link:'<svg viewBox="0 0 24 24" fill="none"><circle cx="7" cy="7" r="2.5" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="17" r="2.5" stroke="currentColor" stroke-width="1.7"/><path d="M7 9.5v3a4 4 0 0 0 4 4h3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>',
+ chart:'<svg viewBox="0 0 24 24" fill="none"><path d="M4 19h16M7 16V9m5 7V5m5 11v-5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>',
+ doc:'<svg viewBox="0 0 24 24" fill="none"><path d="M8 3h6l4 4v14H6V5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+};
+const SERVICES=[
+ {g:'Wound management',icon:'heart',t:'Advanced wound management',d:'Acute and chronic non-healing wounds.'},
+ {g:'Wound management',icon:'drop',t:'Pressure & diabetic ulcers',d:'Staging, offloading, and ulcer protocols.'},
+ {g:'Wound management',icon:'shield',t:'Infection identification',d:'Early recognition and antimicrobial guidance.'},
+ {g:'Wound management',icon:'leafline',t:'Skin integrity & prevention',d:'Risk assessment and prevention plans.'},
+ {g:'Surgical & complex',icon:'scalpel',t:'Surgical & traumatic wounds',d:'Post-op sites and complex closure.'},
+ {g:'Surgical & complex',icon:'warn',t:'Complex surgical wounds',d:'Flaps, grafts, dehiscence, exposed hardware, and challenging postoperative wounds, managed by a clinical team with surgical expertise, with ability for prompt escalation when operative intervention is needed.'},
+ {g:'Surgical & complex',icon:'clock',t:'Post-acute surgical recovery',d:'Ongoing wound oversight after hospital discharge to support healing and reduce unnecessary transfers.'},
+ {g:'Surgical & complex',icon:'search',t:'Clinical evaluation & diagnostics',d:'Assessment of vascular, infectious, and healing barriers, with escalation and specialty referral when needed.'},
+ {g:'Partnership & quality',icon:'book',t:'Bedside nurse education',d:'Hands-on coaching and in-services for your clinical team.'},
+ {g:'Partnership & quality',icon:'link',t:'Specialty care coordination',d:'Collaboration with facility staff, surgeons, specialists, and primary teams to keep care plans aligned.'},
+ {g:'Partnership & quality',icon:'chart',t:'Monitoring & outcomes',d:'Trended healing data, with documentation and wound tracking that support facility quality initiatives and regulatory expectations.'},
+ {g:'Partnership & quality',icon:'doc',t:'Integrated clinical documentation',d:'Comprehensive wound assessments and measurements. Treatment recommendations documented promptly within PCC for easy access by your care team.'}
+];
+const BENEFITS=[
+ {icon:'shield',t:'Reliable bedside coverage',d:'Clinicians experienced in both post-acute and hospital-based care, helping bridge transitions from hospitalization through recovery.'},
+ {icon:'link',t:'Continuity across the continuum',d:'Clinicians who work across the healthcare continuum, from hospitalization through rehabilitation and skilled nursing care, helping support coordinated treatment plans, continuity of care, and timely, direct clinical communication.'},
+ {icon:'clock',t:'Fewer unnecessary transfers',d:'Wounds managed in-house, supporting fewer ER visits and readmissions. Early identification of wound complications before they become hospital-level problems.'},
+ {icon:'doc',t:'Clear, consistent records',d:'Wound progress measured and documented across visits. Objective measurements and longitudinal tracking to demonstrate healing progress.'},
+ {icon:'heart',t:'A partner to your whole care team',d:'Close collaboration with your nursing and therapy teams, as well as medical directors and directors of nursing, to support continuity of care.'},
+ {icon:'chart',t:'Quality program alignment',d:'Outcome data routed back to your QAPI committee.'}
+];
+
+/* ---------- nav / progress / totop ---------- */
+const nav=document.getElementById('nav'),prog=document.getElementById('progress');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled',window.scrollY>40);
+  document.getElementById('toTop').classList.toggle('show',window.scrollY>600);
+  const h=document.documentElement;
+  prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
+  parallax();
+},{passive:true});
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+document.getElementById('toTop').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+/* ---------- parallax ---------- */
+const parEls=[...document.querySelectorAll('[data-par]')];
+function parallax(){const y=window.scrollY;parEls.forEach(el=>{el.style.transform=`translateY(${y*parseFloat(el.dataset.par)*-0.35}px)`;});}
+
+/* ---------- magnetic buttons ---------- */
+document.querySelectorAll('.magnetic').forEach(btn=>{
+  btn.addEventListener('mousemove',e=>{const r=btn.getBoundingClientRect();
+    btn.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.18}px,${(e.clientY-r.top-r.height/2)*.3}px)`;});
+  btn.addEventListener('mouseleave',()=>btn.style.transform='');
+});
+
+/* ---------- reveal + counters ---------- */
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const cio=new IntersectionObserver(es=>{es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,t=+el.dataset.count;let n=0;const s=Math.max(1,Math.ceil(t/40));const iv=setInterval(()=>{n+=s;if(n>=t){n=t;clearInterval(iv);}el.textContent=n;},60);cio.unobserve(el);});},{threshold:.6});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
+/* ---------- nav spy ---------- */
+const navA=[...document.querySelectorAll('.nav-links a')];
+const spy=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){navA.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));}});},{threshold:.35});
+document.querySelectorAll('section[id],header[id]').forEach(s=>spy.observe(s));
+
+/* ---------- JOURNEY stepper ---------- */
+const jList=document.getElementById('jList'),jStage=document.getElementById('jStage');
+let jIdx=0,jTimer=null,jPaused=false;
+STEPS.forEach((s,i)=>{
+  const b=document.createElement('button');b.className='j-item';b.type='button';b.setAttribute('role','tab');
+  b.innerHTML=`<span class="n">${i+1}</span><span class="t">${s.title}</span><span class="bar"><i></i></span>`;
+  b.addEventListener('click',()=>{setStep(i);restartTimer();});
+  jList.appendChild(b);
+});
+const jItems=[...jList.children];
+function setStep(i){
+  jIdx=i;
+  jStage.classList.add('swap');
+  setTimeout(()=>{
+    document.getElementById('jTitle').textContent=STEPS[i].title;
+    document.getElementById('jDesc').textContent=STEPS[i].desc;
+    document.getElementById('jBigN').textContent=String(i+1).padStart(2,'0');
+    jStage.classList.remove('swap');
+  },200);
+  jItems.forEach((el,k)=>{el.classList.toggle('active',k===i);el.classList.toggle('done',k<i);el.setAttribute('aria-selected',k===i?'true':'false');
+    const bar=el.querySelector('.bar i');bar.style.transition='none';bar.style.width='0';
+    if(k===i){requestAnimationFrame(()=>{bar.style.transition='width 4.5s linear';if(!jPaused)bar.style.width='100%';});}
+  });
+}
+function tick(){if(!jPaused)setStep((jIdx+1)%STEPS.length);}
+function restartTimer(){clearInterval(jTimer);jTimer=setInterval(tick,4700);}
+document.getElementById('jPrev').addEventListener('click',()=>{setStep((jIdx-1+STEPS.length)%STEPS.length);restartTimer();});
+document.getElementById('jNext').addEventListener('click',()=>{setStep((jIdx+1)%STEPS.length);restartTimer();});
+const jWrap=document.querySelector('.journey');
+jWrap.addEventListener('mouseenter',()=>{jPaused=true;document.getElementById('jHint').textContent='Paused — you drive';const bar=jItems[jIdx].querySelector('.bar i');const w=getComputedStyle(bar).width;bar.style.transition='none';bar.style.width=w;});
+jWrap.addEventListener('mouseleave',()=>{jPaused=false;document.getElementById('jHint').textContent='Auto-playing — hover to pause';setStep(jIdx);restartTimer();});
+setStep(0);restartTimer();
+
+/* ---------- SERVICES explorer ---------- */
+const xList=document.getElementById('xList'),xDetail=document.getElementById('xDetail');
+let curGroup='';
+SERVICES.forEach((s,i)=>{
+  if(s.g!==curGroup){curGroup=s.g;
+    const g=document.createElement('div');g.className='x-group';g.innerHTML=`<h4>${s.g}</h4>`;g.id='xg'+i;xList.appendChild(g);}
+  const grp=xList.lastElementChild;
+  const b=document.createElement('button');b.className='x-row';b.type='button';
+  b.innerHTML=`<span class="xi">${ICONS[s.icon]}</span><span class="xt">${s.t}</span><span class="go"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>`;
+  const inline=document.createElement('div');inline.className='x-inline';inline.textContent=s.d;
+  b.addEventListener('mouseenter',()=>{if(window.matchMedia('(min-width:981px)').matches)selectSvc(i);});
+  b.addEventListener('click',()=>{selectSvc(i);
+    if(!window.matchMedia('(min-width:981px)').matches){
+      const was=b.classList.contains('open');
+      xList.querySelectorAll('.x-row').forEach(r=>r.classList.remove('open'));
+      if(!was)b.classList.add('open');
+    }});
+  grp.appendChild(b);grp.appendChild(inline);
+});
+const xRows=[...xList.querySelectorAll('.x-row')];
+let xCur=-1;
+function selectSvc(i){
+  if(i===xCur)return;xCur=i;
+  xRows.forEach((r,k)=>{r.classList.toggle('active',k===i);r.setAttribute('aria-pressed',k===i?'true':'false');});
+  xDetail.classList.add('swap');
+  setTimeout(()=>{
+    document.getElementById('xIc').innerHTML=ICONS[SERVICES[i].icon];
+    document.getElementById('xTitle').textContent=SERVICES[i].t;
+    document.getElementById('xDesc').textContent=SERVICES[i].d;
+    document.getElementById('xTag').textContent=SERVICES[i].g;
+    xDetail.classList.remove('swap');
+  },160);
+}
+selectSvc(0);
+
+/* ---------- WHY accordion ---------- */
+const acc=document.getElementById('acc');
+BENEFITS.forEach((b,i)=>{
+  const it=document.createElement('div');it.className='acc-item'+(i===0?' open':'');
+  it.innerHTML=`<button class="acc-btn" type="button" aria-expanded="${i===0?'true':'false'}"><span class="ai">${ICONS[b.icon]}</span><h3>${b.t}</h3><span class="chev"><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="acc-panel"><p>${b.d}</p></div>`;
+  acc.appendChild(it);
+});
+function sizeAcc(){acc.querySelectorAll('.acc-item').forEach(it=>{const p=it.querySelector('.acc-panel');p.style.maxHeight=it.classList.contains('open')?p.scrollHeight+'px':'0';});}
+acc.addEventListener('click',e=>{
+  const btn=e.target.closest('.acc-btn');if(!btn)return;
+  const it=btn.parentElement,was=it.classList.contains('open');
+  acc.querySelectorAll('.acc-item').forEach(x=>{x.classList.remove('open');x.querySelector('.acc-btn').setAttribute('aria-expanded','false');});
+  if(!was){it.classList.add('open');btn.setAttribute('aria-expanded','true');}
+  sizeAcc();
+});
+sizeAcc();window.addEventListener('resize',sizeAcc);
+
+/* ---------- team card tilt ---------- */
+document.querySelectorAll('.tilt').forEach(card=>{
+  card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();
+    const rx=((e.clientY-r.top)/r.height-.5)*-7,ry=((e.clientX-r.left)/r.width-.5)*7;
+    card.style.transform=`rotateX(${rx}deg) rotateY(${ry}deg) translateY(-4px)`;});
+  card.addEventListener('mouseleave',()=>card.style.transform='');
+});
+
+/* ---------- coverage map: hover/focus/tap a zone -> caption + glow ---------- */
+(()=>{const live=document.getElementById('mapLive');if(!live)return;const base=live.textContent;
+  const zones=[...document.querySelectorAll('.co-zone')],glows=[...document.querySelectorAll('.co-glow path')];
+  const hot=z=>{glows.forEach(g=>g.classList.toggle('hot',!!z&&g.dataset.zone===z.dataset.zone));live.textContent=z?`${z.dataset.label} — ${z.dataset.cities}`:base;};
+  zones.forEach(z=>{z.addEventListener('mouseenter',()=>hot(z));z.addEventListener('mouseleave',()=>hot(document.querySelector('.co-zone.active')));
+    z.addEventListener('focus',()=>hot(z));z.addEventListener('blur',()=>hot(document.querySelector('.co-zone.active')));
+    z.addEventListener('click',()=>{const on=!z.classList.contains('active');zones.forEach(o=>o.classList.remove('active'));z.classList.toggle('active',on);hot(on?z:null);});
+    z.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();z.click();}});});})();
+
+/* ---------- form ---------- */
+document.getElementById('leadForm').addEventListener('submit',ev=>{ev.preventDefault();
+  const g=id=>encodeURIComponent(document.getElementById(id).value||'');
+  const body=`Name: ${g('name')}%0D%0ARole: ${g('role')}%0D%0AFacility: ${g('org')}%0D%0AEmail: ${g('email')}%0D%0A%0D%0A${g('msg')}`;
+  window.location.href=`mailto:operations@lavidaheal.com?subject=${encodeURIComponent('Facility introduction request')}&body=${body}`;
+  document.getElementById('formBody').style.display='none';document.getElementById('formOk').classList.add('show');});
+</script>
+
+<!-- ============================================================
+     CINEMATIC ENGINE — Lenis smooth-scroll · WebGL hero · kinetic type
+     Everything below degrades gracefully if a CDN/WebGL is unavailable.
+     ============================================================ -->
+<script>
+(function(){
+  const reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  const hasGSAP=!!window.gsap, hasLenis=!!window.Lenis;
+  if(!hasGSAP) document.documentElement.classList.add('no-anim');
+
+  /* ---------- Lenis momentum scroll ---------- */
+  let lenis=null;
+  if(hasLenis && !reduce){
+    lenis=new Lenis({duration:1.15,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t)),smoothWheel:true});
+    document.documentElement.style.scrollBehavior='auto';
+    /* keep ScrollTrigger synced, but run Lenis on its OWN rAF so it never stalls GSAP's tween ticker */
+    if(hasGSAP && window.ScrollTrigger){ lenis.on('scroll',()=>ScrollTrigger.update()); }
+    const raf=t=>{lenis.raf(t);requestAnimationFrame(raf)};requestAnimationFrame(raf);
+    /* route in-page anchors through Lenis */
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href');if(id.length<2)return;
+        const el=document.querySelector(id);if(!el)return;
+        e.preventDefault();lenis.scrollTo(el,{offset:-72});
+        document.getElementById('navLinks')?.classList.remove('open');
+      });
+    });
+    const tt=document.getElementById('toTop');
+    if(tt)tt.addEventListener('click',()=>lenis.scrollTo(0));
+  }
+
+  /* ---------- kinetic headline ---------- */
+  if(hasGSAP && !reduce){
+    gsap.fromTo('.hero-title .w',{yPercent:118},{yPercent:0,duration:1.05,ease:'power4.out',stagger:.07,delay:.15});
+    /* safety: never let the headline stay hidden if rAF/tween is interrupted */
+    setTimeout(()=>{try{gsap.set('.hero-title .w',{yPercent:0});}catch(e){}},2600);
+    gsap.from('.hero-pill',{y:14,autoAlpha:0,duration:.7,delay:.1,ease:'power3.out'});
+    gsap.from('.hero .lede',{y:18,autoAlpha:0,duration:.8,delay:.55,ease:'power3.out'});
+    gsap.from('.hero-cta',{y:18,autoAlpha:0,duration:.8,delay:.72,ease:'power3.out'});
+    gsap.from('.hero-trust',{y:18,autoAlpha:0,duration:.8,delay:.85,ease:'power3.out'});
+    gsap.from('.hero-visual',{y:26,autoAlpha:0,duration:1.1,delay:.4,ease:'power3.out'});
+  }
+
+  /* ---------- cursor-reactive hero depth ---------- */
+  const hero=document.getElementById('top');
+  try{parEls.length=0;}catch(e){} /* stop legacy scroll-parallax from fighting cursor depth */
+  const depthEls=[...document.querySelectorAll('.hero-orb, .hv-photo, .hv-chip, .hv-badge')];
+  let mx=0,my=0,tmx=0,tmy=0;
+  if(hero && !reduce){
+    hero.addEventListener('pointermove',e=>{
+      const r=hero.getBoundingClientRect();
+      tmx=((e.clientX-r.left)/r.width-.5);tmy=((e.clientY-r.top)/r.height-.5);
+    });
+    hero.addEventListener('pointerleave',()=>{tmx=0;tmy=0});
+    (function loop(){
+      mx+=(tmx-mx)*.06;my+=(tmy-my)*.06;
+      depthEls.forEach(el=>{
+        const d=parseFloat(el.dataset.par||0.12)||0.12;const amp=(1+Math.abs(d))*16;
+        el.style.setProperty('--px',(mx*amp*(el.classList.contains('hv-photo')?1:2.2)).toFixed(2)+'px');
+        el.style.transform=`translate(${(mx*amp).toFixed(2)}px,${(my*amp).toFixed(2)}px)`;
+      });
+      requestAnimationFrame(loop);
+    })();
+  }
+
+  /* ---------- WebGL living gradient ---------- */
+  (function heroGL(){
+    const cv=document.getElementById('heroCanvas');if(!cv||reduce)return;
+    let gl;try{gl=cv.getContext('webgl')||cv.getContext('experimental-webgl');}catch(e){}
+    if(!gl){cv.remove();return;}
+    const vs=`attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}`;
+    const fs=`precision highp float;
+      uniform vec2 u_res;uniform float u_t;uniform vec2 u_m;
+      // brand palette
+      vec3 cream=vec3(0.980,0.965,0.933);
+      vec3 sageS=vec3(0.847,0.906,0.863);
+      vec3 sage =vec3(0.360,0.549,0.490);
+      vec3 terS =vec3(0.969,0.875,0.788);
+      vec3 ter  =vec3(0.867,0.541,0.361);
+      float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+      float noise(vec2 p){vec2 i=floor(p),f=fract(p);vec2 u=f*f*(3.-2.*f);
+        return mix(mix(hash(i),hash(i+vec2(1,0)),u.x),mix(hash(i+vec2(0,1)),hash(i+vec2(1,1)),u.x),u.y);}
+      float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<5;i++){v+=a*noise(p);p*=2.02;a*=.5;}return v;}
+      void main(){
+        vec2 uv=gl_FragCoord.xy/u_res.xy;
+        vec2 asp=vec2(u_res.x/u_res.y,1.);
+        vec2 p=uv*asp;
+        float t=u_t*0.045;
+        vec2 mo=(u_m-.5)*0.35;
+        // domain warp
+        vec2 q=vec2(fbm(p*1.6+t+mo),fbm(p*1.6-t*1.1+mo+5.2));
+        vec2 r=vec2(fbm(p*1.7+q*1.4+t*1.3),fbm(p*1.7+q*1.4-t));
+        float n=fbm(p*1.5+r*1.3+mo);
+        vec3 col=mix(cream,sageS,smoothstep(.25,.85,n));
+        col=mix(col,terS,smoothstep(.45,1.0,r.x)*0.6);
+        col=mix(col,sage,smoothstep(.72,1.05,q.y)*0.28);
+        col=mix(col,ter, smoothstep(.78,1.08,r.y)*0.18);
+        // keep upper-left airy for headline legibility
+        float light=smoothstep(1.15,-.15,uv.x+ (1.-uv.y)*0.5);
+        col=mix(col,cream,light*0.45);
+        // soft vignette
+        float vig=smoothstep(1.35,.35,length((uv-.5)*asp));
+        col=mix(col*0.985,col,vig);
+        gl_FragColor=vec4(col,1.);
+      }`;
+    function sh(t,s){const o=gl.createShader(t);gl.shaderSource(o,s);gl.compileShader(o);
+      if(!gl.getShaderParameter(o,gl.COMPILE_STATUS)){console.warn(gl.getShaderInfoLog(o));return null;}return o;}
+    const v=sh(gl.VERTEX_SHADER,vs),f=sh(gl.FRAGMENT_SHADER,fs);
+    if(!v||!f){cv.remove();return;}
+    const pr=gl.createProgram();gl.attachShader(pr,v);gl.attachShader(pr,f);gl.linkProgram(pr);
+    if(!gl.getProgramParameter(pr,gl.LINK_STATUS)){cv.remove();return;}
+    gl.useProgram(pr);
+    const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);
+    gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+    const loc=gl.getAttribLocation(pr,'p');gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+    const uRes=gl.getUniformLocation(pr,'u_res'),uT=gl.getUniformLocation(pr,'u_t'),uM=gl.getUniformLocation(pr,'u_m');
+    let gmx=.5,gmy=.5;
+    if(hero)hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();gmx=(e.clientX-r.left)/r.width;gmy=1-(e.clientY-r.top)/r.height;});
+    function size(){const dpr=Math.min(window.devicePixelRatio||1,1.6);
+      cv.width=cv.offsetWidth*dpr;cv.height=cv.offsetHeight*dpr;gl.viewport(0,0,cv.width,cv.height);}
+    size();window.addEventListener('resize',size);
+    const t0=performance.now();let raf;
+    let mmx=.5,mmy=.5,paused=false;
+    const heroIO=new IntersectionObserver(es=>{paused=!es[0].isIntersecting;if(!paused)draw();},{threshold:0});
+    heroIO.observe(cv);
+    function draw(){
+      if(paused)return;
+      mmx+=(gmx-mmx)*.05;mmy+=(gmy-mmy)*.05;
+      gl.uniform2f(uRes,cv.width,cv.height);
+      gl.uniform1f(uT,(performance.now()-t0)/1000);
+      gl.uniform2f(uM,mmx,mmy);
+      gl.drawArrays(gl.TRIANGLES,0,3);
+      raf=requestAnimationFrame(draw);
+    }
+    draw();
+  })();
+
+  /* ---------- section-header kinetic reveal (scroll) ---------- */
+  if(hasGSAP && window.ScrollTrigger && !reduce){
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll('.section-head h2').forEach(h=>{
+      gsap.from(h,{yPercent:18,autoAlpha:0,duration:.9,ease:'power3.out',
+        scrollTrigger:{trigger:h,start:'top 85%'}});
+    });
+    ScrollTrigger.refresh();
+  }
+})();
+</script>
+</body>
+</html>

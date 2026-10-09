@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lavidaheal.com/sitemap.xml
